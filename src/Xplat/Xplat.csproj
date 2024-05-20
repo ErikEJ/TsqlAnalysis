@@ -1,0 +1,14 @@
+﻿<Project Sdk="MSBuild.Sdk.SqlProj/2.7.2">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<SqlServerVersion>SqlAzure</SqlServerVersion>
+		<!--<RunSqlCodeAnalysis>True</RunSqlCodeAnalysis>-->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\Sqlproj\Tables\**\*.sql" />
+		<Content Include="..\Sqlproj\Procedures\**\*.sql" />
+	</ItemGroup>
+
+</Project>
