@@ -4,6 +4,7 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<SqlServerVersion>SqlAzure</SqlServerVersion>
 		<!--<RunSqlCodeAnalysis>True</RunSqlCodeAnalysis>-->
+		<!--<CodeAnalysisRules>-SqlServer.Rules.SRD0001;-SqlServer.Rules.SRD0047;-SqlServer.Rules.SRN0007</CodeAnalysisRules>-->
 	</PropertyGroup>
 
 	<ItemGroup>
