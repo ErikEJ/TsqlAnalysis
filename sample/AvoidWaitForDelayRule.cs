@@ -16,6 +16,7 @@ namespace SampleRules
         "Avoid using WaitFor Delay statements in stored procedures, functions and triggers.",
         Description = "WAITFOR DELAY statement was found in {0}.",
         Category = "Performance",
+        PlatformCompatibility = Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility.AllNotDw,
         RuleScope = SqlRuleScope.Element)]
     public sealed class AvoidWaitForDelayRule : SqlCodeAnalysisRule
     {
