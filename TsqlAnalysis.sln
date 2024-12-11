@@ -4,8 +4,6 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xplat", "src\Xplat\Xplat.csproj", "{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sqlproj", "src\Sqlproj\Sqlproj.sqlproj", "{5735BE12-9E35-43AC-AFA1-710C42B43FCF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,12 +14,6 @@ Global
 		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5735BE12-9E35-43AC-AFA1-710C42B43FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5735BE12-9E35-43AC-AFA1-710C42B43FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5735BE12-9E35-43AC-AFA1-710C42B43FCF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{5735BE12-9E35-43AC-AFA1-710C42B43FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5735BE12-9E35-43AC-AFA1-710C42B43FCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5735BE12-9E35-43AC-AFA1-710C42B43FCF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

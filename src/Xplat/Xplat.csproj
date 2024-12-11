@@ -1,7 +1,7 @@
-﻿<Project Sdk="MSBuild.Sdk.SqlProj/2.7.2">
+﻿<Project Sdk="MSBuild.Sdk.SqlProj/3.0.0">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>netstandard2.1</TargetFramework>
 		<SqlServerVersion>SqlAzure</SqlServerVersion>
 		<!--<RunSqlCodeAnalysis>True</RunSqlCodeAnalysis>-->
 		<!--<CodeAnalysisRules>-SqlServer.Rules.SRD0001;-SqlServer.Rules.SRD0047;-SqlServer.Rules.SRN0007</CodeAnalysisRules>-->
@@ -11,5 +11,10 @@
 		<Content Include="..\Sqlproj\Tables\**\*.sql" />
 		<Content Include="..\Sqlproj\Procedures\**\*.sql" />
 	</ItemGroup>
+
+	<ItemGroup>
+      <PackageReference Include="ErikEJ.DacFX.SqlServer.Rules" Version="1.1.1" />
+      <PackageReference Include="ErikEJ.DacFX.TSQLSmellSCA" Version="1.1.1" />
+    </ItemGroup>
 
 </Project>
