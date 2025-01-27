@@ -98,13 +98,15 @@ WAITFOR DELAY '00:10'
 dotnet build --no-incremental
 ```
 
+Show slide with components
+
 Open sample rule in Visual Studio, and walk through it.
 
 Show code and .csproj
 
-Show slide with components
-
 Build it and open resulting .nupkg
+
+Show Analyze feature!
 
 ```bash
 dotnet add package SampleRules --source C:\Code\Github\DemoRepos\TsqlAnalysisDemo\sample\bin\Debug\
