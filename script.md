@@ -27,6 +27,8 @@ dotnet new table -n Awesome
 
 Show table in VS Code and delete it
 
+Mention `dotnet publish` for dev workflow only
+
 ```bash
 sqlpackage /Action:Extract /Properties:ExtractTarget=Flat /SourceConnectionString:"Data Source=.\SQLEXPRESS;Database=Chinook;Trusted_Connection=true;Encrypt=false" /TargetFile:Tables
 ```
@@ -57,6 +59,10 @@ Ignore SRD0010:
 
 ```xml
 <CodeAnalysisRules>-SqlServer.Rules.SRD0010</CodeAnalysisRules>
+```
+
+```xml
+<CodeAnalysisRules>-SqlServer.Rules.SRD0003;-SqlServer.Rules.SRD0047;-SqlServer.Rules.SRD0046;-SqlServer.Rules.SRD0010;-SqlServer.Rules.SRD0001;+!SqlServer.Rules*;+!Microsoft.Rules*;+!Smells*;-SqlServer.Rules.SRD0063</CodeAnalysisRules>
 ```
 
 ```bash
