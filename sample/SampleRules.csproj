@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>SampleRules</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <UserSecretsId>a1e4636c-cf55-4fe2-860a-72cd73885228</UserSecretsId>
+    <DevelopmentDependency>true</DevelopmentDependency>
   </PropertyGroup>
  
   <ItemGroup>

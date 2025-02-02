@@ -1,7 +1,6 @@
 ﻿using Microsoft.SqlServer.Dac.CodeAnalysis;
 using Microsoft.SqlServer.Dac.Model;
 using Microsoft.SqlServer.TransactSql.ScriptDom;
-using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -98,7 +97,7 @@ namespace SampleRules
             foreach (WaitForStatement waitForStatement in waitforDelayStatements)
             {
                 SqlRuleProblem problem = new SqlRuleProblem(
-                    String.Format(CultureInfo.CurrentCulture,
+                    string.Format(CultureInfo.CurrentCulture,
                         ruleDescriptor.DisplayDescription, elementName),
                     modelElement,
                     waitForStatement);

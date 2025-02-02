@@ -19,7 +19,15 @@ dotnet new install MSBuild.Sdk.SqlProj.Templates
 dotnet new sqlproj -n CnugDemo
 ```
 
-Show contents in VS Code, and disable Analyis for now and update to 1.2.0
+```bash
+cd CnugDemo
+```
+
+```bash
+code .
+```
+
+Show contents in VS Code, and disable Analyis for now
 
 ```bash
 dotnet new table -n Awesome
@@ -27,7 +35,7 @@ dotnet new table -n Awesome
 
 Show table in VS Code and delete it
 
-Mention `dotnet publish` for dev workflow only
+Mention `dotnet publish` for dev workflow only!
 
 ```bash
 sqlpackage /Action:Extract /Properties:ExtractTarget=Flat /SourceConnectionString:"Data Source=.\SQLEXPRESS;Database=Chinook;Trusted_Connection=true;Encrypt=false" /TargetFile:Tables
@@ -41,19 +49,25 @@ dotnet build
 
 Explain what build does - checks integrity and syntax
 
-Show .dacpac in 7-zip and open model.xml
+Break build!
+
+Unbreak build
+
+Open and show .dacpac in 7-zip
 
 Explain use of .dacpac: sqlpackage /Action:Publish
 
 Enable Code Anlysis
 
-Explain rules packages vs built in rules
+Explain rules packages vs built in rules (OSS, versioned, NuGet)
 
 ```bash
 dotnet build
 ```
 
 Walk through the violations - groups of rules - some are odd.
+
+Open docs for SRD0010
 
 Ignore SRD0010:
 
@@ -112,7 +126,7 @@ Show code and .csproj
 
 Build it and open resulting .nupkg
 
-Show Analyze feature!
+Show Analyze feature on AdventureWorks
 
 ```bash
 dotnet add package SampleRules --source C:\Code\Github\DemoRepos\TsqlAnalysisDemo\sample\bin\Debug\
