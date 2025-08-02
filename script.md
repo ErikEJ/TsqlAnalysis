@@ -97,7 +97,8 @@ Create StaticCodeAnalysis.SuppressMessages.xml in root of project
 <?xml version="1.0" encoding="utf-8" ?>
 <StaticCodeAnalysis version="2" xmlns="urn:Microsoft.Data.Tools.Schema.StaticCodeAnalysis">
   <SuppressedFile FilePath="Tables\Track.sql">
-  <SuppressedRule Category="SqlServer.Rules" RuleId="SRN0007" />
+    <SuppressedRule Category="SqlServer.Rules" RuleId="SRN0007" />
+    <SuppressedRule Category="SqlServer.Rules" RuleId="SRD0010" />
   </SuppressedFile>
 </StaticCodeAnalysis>
 ```
