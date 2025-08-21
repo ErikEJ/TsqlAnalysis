@@ -16,6 +16,10 @@ Add new table.
 
 Import using sqlpackage in VS Terminal - import Northwind
 
+```bash
+sqlpackage /Action:Extract /properties:ExtractTarget=SchemaObjectType /SourceConnectionString:"Data Source=.\SQLEXPRESS;Database=Chinook;Trusted_Connection=true;Encrypt=false" /TargetFile:Tables
+```
+
 Explain what build does - checks integrity and syntax
 
 Break build!
@@ -57,9 +61,8 @@ Create StaticCodeAnalysis.SuppressMessages.xml in root of project
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <StaticCodeAnalysis version="2" xmlns="urn:Microsoft.Data.Tools.Schema.StaticCodeAnalysis">
-  <SuppressedFile FilePath="Tables\Track.sql">
-    <SuppressedRule Category="SqlServer.Rules" RuleId="SRN0007" />
-    <SuppressedRule Category="SqlServer.Rules" RuleId="SRD0010" />
+  <SuppressedFile FilePath="dbo\Tables\PlaylistTrack.sql">
+    <SuppressedRule Category="SqlServer.Rules" RuleId="SRD0007" />
   </SuppressedFile>
 </StaticCodeAnalysis>
 ```
@@ -83,7 +86,7 @@ Build it and open resulting .nupkg
 From VS terminal:
 
 ```bash
-dotnet add package SampleRules --source C:\Code\Github\DemoRepos\TsqlAnalysisDemo\sample\bin\Debug\
+dotnet add package SampleRules --source C:\dev\GitHub\DemoRepos\TsqlAnalysis\sample\bin\Debug
 ```
 
 Show updated project file

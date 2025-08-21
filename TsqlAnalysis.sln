@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xplat", "src\Xplat\Xplat.csproj", "{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRules", "sample\SampleRules.csproj", "{178E5BD5-E9A8-AE7A-AEC8-A3A30AC6773E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,10 +10,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF98B543-2CB8-4EF8-8B59-ED9926577ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{178E5BD5-E9A8-AE7A-AEC8-A3A30AC6773E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178E5BD5-E9A8-AE7A-AEC8-A3A30AC6773E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178E5BD5-E9A8-AE7A-AEC8-A3A30AC6773E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178E5BD5-E9A8-AE7A-AEC8-A3A30AC6773E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
