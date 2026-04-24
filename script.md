@@ -127,8 +127,6 @@ Show code and .csproj
 
 Build it and open resulting .nupkg
 
-Show Analyze feature on AdventureWorks
-
 ```bash
 dotnet add package SampleRules --source C:\Code\Github\DemoRepos\TsqlAnalysisDemo\sample\bin\Debug\
 ```
@@ -140,5 +138,15 @@ dotnet build --no-incremental
 ```
 
 Show that stored proc has rule violations.
+
+How about ad hoc single file analysis?
+
+Show SQL Analyzer extension.
+
+Run ad hoc analysis with TSqlAnalyzer from menu item.
+
+Show errors in Error list.
+
+Show Copilot with MCP Server.
 
 Back to slides and CTA!
